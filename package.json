@@ -1,0 +1,24 @@
+{
+  "name": "make10-plus",
+  "version": "1.0.0",
+  "description": "A game about making 10 with some digits (0-9) and the four arithmetic operators (+,-,*,/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sp8783/make10-plus.git"
+  },
+  "keywords": [
+    "game",
+    "puzzle",
+    "math"
+  ],
+  "author": "sp8783",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sp8783/make10-plus/issues"
+  },
+  "homepage": "https://github.com/sp8783/make10-plus#readme"
+}
