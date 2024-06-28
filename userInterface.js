@@ -19,7 +19,8 @@ export class UserInterface {
 
   async playGame() {
     const difficulty = await this.selectDifficulty();
-    const { problem, answer } = await this.game.pickRandomProblem(difficulty);
+    const { problem, example_answer } =
+      await this.game.pickRandomProblem(difficulty);
 
     console.log(`Solve the following equation to make 10: ${problem}`);
     console.log("(Type 'give up' to see the answer)");
@@ -28,7 +29,7 @@ export class UserInterface {
       const userInput = await this.getUserInput();
 
       if (userInput === "give up") {
-        console.log(`The example answer is: ${answer}`);
+        console.log(`The example answer is: ${example_answer}`);
         return;
       }
 
