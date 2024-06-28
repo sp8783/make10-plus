@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "make10-plus",
   "version": "1.0.0",
   "description": "A game about making 10 with some digits (0-9) and the four arithmetic operators (+,-,*,/)",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/sp8783/make10-plus/issues"
   },
-  "homepage": "https://github.com/sp8783/make10-plus#readme"
+  "homepage": "https://github.com/sp8783/make10-plus#readme",
+  "dependencies": {
+    "enquirer": "^2.4.1"
+  }
 }
