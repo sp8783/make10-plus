@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
+import { Game } from "./game.js";
 import { UserInterface } from "./userInterface.js";
 
-const userInterface = new UserInterface();
+const game = new Game();
+const userInterface = new UserInterface(game);
 
 async function main() {
   console.log("Welcome to the game!");

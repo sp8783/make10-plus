@@ -1,0 +1,24 @@
+{
+    "Easy": [
+        {
+            "problem": [1,2,3,4],
+            "example_answer": "1+2+3+4"
+        },
+        {
+            "problem": [0,0,2,5],
+            "example_answer": "0+0+2*5"
+        }
+    ],
+    "Normal":[
+        {
+            "problem": [2,3,8,9],
+            "example_answer": "2*8+3-9"
+        }
+    ],
+    "Hard":[
+        {
+            "problem": [3,4,6,7],
+            "example_answer": "(4-7/3)*6"
+        }
+    ]
+}

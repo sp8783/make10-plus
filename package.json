@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/sp8783/make10-plus#readme",
   "dependencies": {
-    "enquirer": "^2.4.1"
+    "enquirer": "^2.4.1",
+    "mathjs": "^13.0.1"
   }
 }
