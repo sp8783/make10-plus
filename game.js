@@ -1,4 +1,4 @@
-import fs from "fs/promises";
+import fs from "fs";
 import { evaluate } from "mathjs";
 
 const jsonFilePath = "./problems.json";
@@ -15,7 +15,7 @@ export class Game {
 
   async loadProblems() {
     try {
-      const jsonData = await fs.readFile(jsonFilePath, "utf8");
+      const jsonData = fs.readFileSync(jsonFilePath, "utf8");
       const problems = JSON.parse(jsonData);
       return problems;
     } catch (err) {
