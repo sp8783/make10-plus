@@ -1,7 +1,6 @@
 import fs from "fs";
 import { evaluate } from "mathjs";
-
-const jsonFilePath = "./problems.json";
+import path from "path";
 
 export class Game {
   async pickRandomProblem(difficulty) {
@@ -15,7 +14,8 @@ export class Game {
 
   async loadProblems() {
     try {
-      const jsonData = fs.readFileSync(jsonFilePath, "utf8");
+      const problemsPath = path.resolve(import.meta.dirname, "problems.json");
+      const jsonData = fs.readFileSync(problemsPath, "utf8");
       const problems = JSON.parse(jsonData);
       return problems;
     } catch (err) {
